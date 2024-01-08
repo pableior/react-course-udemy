@@ -7,6 +7,6 @@ import './styles.css';
 import { CounterApp } from './CounterApp';
 ReactDOM.createRoot(document.getElementById('root')).render (
     <React.StrictMode>
-        <CounterApp value = {15} />
+        <FirstApp value = {15} />
     </React.StrictMode>
 );

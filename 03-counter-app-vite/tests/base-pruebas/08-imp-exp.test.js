@@ -28,12 +28,19 @@ describe('Pruebas en 08-imp-exp', () => {
 
      test('Should return dc heroes', () => {
         const heroes = getHeroesByOwner('DC');
-
         expect(heroes.length).toBe(3);
-        heroes.filter(h => h.owner);    
+        heroes.forEach(h => {
+            expect(h.owner).toBe('DC');
+        });  
+     });
 
+     test('Should return marvel heroes', () => {
+      const heroes = getHeroesByOwner('Marvel');
 
+      expect(heroes.length).toBe(2);
+      heroes.forEach(h => {
+          expect(h.owner).toBe('Marvel');
+      });  
 
-     }
-    
-    })
+   });
+});
