@@ -71,7 +71,9 @@ exports[`test on component counter app must match to snapshot 2`] = `
   <button>
     -1
   </button>
-  <button>
+  <button
+    aria-label="btn-reset"
+  >
     Reset
   </button>
 </div>
